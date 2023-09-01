@@ -1,30 +1,41 @@
 {
-  "name": "licenseplates",
+  "name": "darkblue-hare",
   "private": true,
-  "version": "0.1.0",
-  "description": "A Strapi application",
+  "version": "1.0.0",
+  "main": "package.json",
+  "license": "UNLICENSED",
   "scripts": {
-    "develop": "strapi develop",
-    "start": "strapi start",
-    "build": "strapi build",
-    "strapi": "strapi"
+    "dev": "sanity dev",
+    "start": "sanity start",
+    "build": "sanity build",
+    "deploy": "sanity deploy",
+    "deploy-graphql": "sanity graphql deploy"
   },
+  "keywords": [
+    "sanity"
+  ],
   "dependencies": {
-    "@strapi/plugin-i18n": "4.12.1",
-    "@strapi/plugin-users-permissions": "4.12.1",
-    "@strapi/strapi": "4.12.1",
-    "better-sqlite3": "8.5.0",
-    "strapi-plugin-vercel-deploy": "^1.4.0"
+    "@sanity/icons": "^2.1.0",
+    "@sanity/ui": "^1.2.0",
+    "@sanity/vision": "^3.15.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-is": "^18.2.0",
+    "sanity": "^3.15.0",
+    "styled-components": "^5.3.9"
   },
-  "author": {
-    "name": "A Strapi developer"
+  "devDependencies": {
+    "@sanity/eslint-config-studio": "^3.0.0",
+    "@types/react": "^18.0.25",
+    "@types/styled-components": "^5.1.26",
+    "eslint": "^8.6.0",
+    "prettier": "^2.8.8",
+    "typescript": "^4.9.5"
   },
-  "strapi": {
-    "uuid": "cdf55f33-3566-4d9e-9608-24cffa1fec16"
-  },
-  "engines": {
-    "node": ">=16.0.0 <=20.x.x",
-    "npm": ">=6.0.0"
-  },
-  "license": "MIT"
+  "prettier": {
+    "semi": false,
+    "printWidth": 100,
+    "bracketSpacing": false,
+    "singleQuote": true
+  }
 }
