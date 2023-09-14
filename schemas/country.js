@@ -12,6 +12,8 @@ export default {
           {title: 'Stany Zjednoczone', value: 'Stany Zjednoczone'},
           {title: 'Meksyk', value: 'Meksyk'},
           {title: 'Kanada', value: 'Kanada'},
+          {title: 'Reszta Świata', value: 'Reszta Świata'},
+          {title: 'Zestawy tablic', value: 'Zestawy tablic'},
         ],
       },
     },

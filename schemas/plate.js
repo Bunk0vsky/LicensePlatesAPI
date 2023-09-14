@@ -1,4 +1,4 @@
-// schemas/pet.js
+// schemas/plate.js
 export default {
   name: 'plate',
   type: 'document',
@@ -64,13 +64,6 @@ export default {
       name: 'alt',
       type: 'string',
       title: 'Nazwa zdjęcia',
-      options: {
-        list: [
-          {title: 'Tablica z USA', value: 'Tablica rejestracyjna z USA'},
-          {title: 'Tablica z Meksyku', value: 'Tablica rejestracyjna z Meksyku'},
-          {title: 'Tablica z Kanady', value: 'Tablica rejestracyjna z Kanady'},
-        ],
-      },
     },
     {
       name: 'price',
