@@ -14,6 +14,7 @@ export default {
           {title: 'Kanada', value: 'Kanada'},
           {title: 'Reszta Świata', value: 'Reszta Świata'},
           {title: 'Zestawy tablic', value: 'Zestawy tablic'},
+          {title: 'Ramki i tab.motocyklowe', value: 'Ramki'},
         ],
       },
     },

@@ -7,12 +7,13 @@ export default {
       title: 'Kondycja tablicy',
       name: 'name',
       type: 'string',
-
       options: {
         list: [
-          {title: 'Bdb', value: 'Bardzo dobry'},
-          {title: 'Db', value: 'Dobry'},
-          {title: 'Dst', value: 'Dostateczny'},
+          {title: 'b.dobry', value: 'Bardzo dobry'},
+          {title: 'dobry', value: 'Dobry'},
+          {title: 'dostateczny', value: 'Dostateczny'},
+          {title: 'słaby', value: 'Słaby'},
+          {title: 'roadkill', value: 'Roadkill'},
         ], // <-- predefined values
       },
     },

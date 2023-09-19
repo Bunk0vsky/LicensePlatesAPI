@@ -45,15 +45,9 @@ export default {
 
     {
       name: 'condition',
-      type: 'string',
+      type: 'reference',
       title: 'Stan tablicy',
-      options: {
-        list: [
-          {title: 'Bdb', value: 'Bardzo dobry'},
-          {title: 'Db', value: 'Dobry'},
-          {title: 'Dst', value: 'Dostateczny'},
-        ],
-      },
+      to: [{type: 'condition'}],
     },
     {
       name: 'src',
