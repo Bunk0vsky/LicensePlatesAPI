@@ -8,7 +8,7 @@ const devOnlyPlugins = [getStartedPlugin()]
 
 export default defineConfig({
   name: 'default',
-  title: 'darkblue-hare',
+  title: 'Panel admina',
 
   projectId: 'va7p5ydh',
   dataset: 'production',
@@ -19,4 +19,3 @@ export default defineConfig({
     types: schemaTypes,
   },
 })
-
