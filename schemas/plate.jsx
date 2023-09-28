@@ -1,4 +1,7 @@
 import {defineConfig} from 'sanity'
+import imageUrlBuilder from '@sanity/image-url'
+
+const builder = imageUrlBuilder(sanityClient)
 
 export default defineConfig({
   name: 'plate',
@@ -35,6 +38,7 @@ export default defineConfig({
           {title: 'Reszta Świata', value: 'Reszta Świata'},
           {title: 'Zestawy tablic', value: 'Zestawy tablic'},
           {title: 'Ramki i tab.motocyklowe', value: 'Ramki'},
+          {title: 'Inne kategorie', value: 'Inne'},
         ],
       },
       validation: (Rule) => Rule.required(),
@@ -162,7 +166,7 @@ export default defineConfig({
 
       validation: (Rule) =>
         Rule.custom((alt, context) => {
-          const choices = ['Reszta Świata', 'Ramki', 'Zestawy tablic']
+          const choices = ['Reszta Świata', 'Ramki', 'Zestawy tablic', 'Inne']
           if (choices.includes(context.document.country) && !alt) {
             return 'Wymagany tytuł w przypadku wyboru Reszta Świata, Ramki, Inne kategorie...'
           } else {
