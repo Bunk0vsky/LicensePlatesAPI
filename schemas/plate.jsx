@@ -1,7 +1,4 @@
 import {defineConfig} from 'sanity'
-import imageUrlBuilder from '@sanity/image-url'
-
-const builder = imageUrlBuilder(sanityClient)
 
 export default defineConfig({
   name: 'plate',
