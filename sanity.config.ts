@@ -7,13 +7,11 @@ import {vercelDeployTool} from 'sanity-plugin-vercel-deploy'
 
 const devOnlyPlugins = [getStartedPlugin()]
 
-const title = import.meta.env.NEXT_PUBLIC_SANITY_PROJECT_TITLE || 'Next.js Blog with Sanity.io'
-const projectId = import.meta.env.NEXT_PUBLIC_SANITY_PROJECT_ID
-const dataset = import.meta.env.NEXT_PUBLIC_SANITY_DATASET
+const projectId = 'va7p5ydh'
+const dataset = 'production'
 
 export default defineConfig({
   name: 'default',
-  title,
 
   projectId,
   dataset,
