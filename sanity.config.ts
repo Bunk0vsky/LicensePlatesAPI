@@ -7,12 +7,16 @@ import {vercelDeployTool} from 'sanity-plugin-vercel-deploy'
 
 const devOnlyPlugins = [getStartedPlugin()]
 
+const title = import.meta.env.NEXT_PUBLIC_SANITY_PROJECT_TITLE || 'Next.js Blog with Sanity.io'
+const projectId = import.meta.env.NEXT_PUBLIC_SANITY_PROJECT_ID
+const dataset = import.meta.env.NEXT_PUBLIC_SANITY_DATASET
+
 export default defineConfig({
   name: 'default',
-  title: 'Panel admina',
+  title,
 
-  projectId: 'va7p5ydh',
-  dataset: 'production',
+  projectId,
+  dataset,
 
   plugins: [deskTool(), vercelDeployTool(), visionTool(), ...(isDev ? devOnlyPlugins : [])],
 
