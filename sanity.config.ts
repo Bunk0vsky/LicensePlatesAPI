@@ -1,22 +1,25 @@
-import {defineConfig, isDev} from 'sanity'
+import {defineConfig} from 'sanity'
 import {visionTool} from '@sanity/vision'
 import {deskTool} from 'sanity/desk'
 import {schemaTypes} from './schemas'
-import {getStartedPlugin} from './plugins/sanity-plugin-tutorial'
-import {vercelDeployTool} from 'sanity-plugin-vercel-deploy'
+import {previewUrl} from 'sanity-plugin-iframe-pane/preview-url'
 
-const devOnlyPlugins = [getStartedPlugin()]
+const title = 'License Plates Admin Panel'
 
 export default defineConfig({
-  name: 'default',
-  title: 'Panel admina',
-
+  basePath: '/studio',
   projectId: 'va7p5ydh',
   dataset: 'production',
-
-  plugins: [deskTool(), vercelDeployTool(), visionTool(), ...(isDev ? devOnlyPlugins : [])],
-
+  title,
   schema: {
     types: schemaTypes,
   },
+  plugins: [
+    deskTool(),
+    previewUrl({
+      base: '/api/draft',
+      urlSecretId: 'preview.secret',
+    }),
+    visionTool(),
+  ],
 })

@@ -1,4 +1,3 @@
-// schemas/index.js
 import plate from './plate'
 import delivery from './delivery'
 import contact from './contact'
